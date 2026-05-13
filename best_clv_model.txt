@@ -1,0 +1,12 @@
+Large File Notice: best_churn_model.pkl
+Problem: The original model file best_churn_model.pkl exceeds GitHub's file size limit, which prevents it from being uploaded directly as a single uncompressed file.
+
+Solution:
+To resolve this, I have provided the model in a compressed format.
+
+Compressed File: Please look for best_churn_model.zip in this directory.
+
+How to use: 
+1. Download the compressed file.
+2. Extract/Unzip it to your local machine.
+3. You will get the original best_churn_model.pkl file, which can then be loaded using joblib or pickle in your Python environment.
