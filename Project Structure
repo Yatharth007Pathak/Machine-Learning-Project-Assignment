@@ -1,0 +1,11 @@
+Machine-Learning-Project-Assignment/
+├── Graphs/                    # Directory containing generated visualization images
+├── MachineLearning.ipynb      # Main Google Colab/Jupyter notebook with ML code
+├── ProblemStatement.png       # Image file describing the project's problem statement
+├── README.md                  # Project documentation and instructions
+├── Telco-Customer-Churn.csv   # Dataset used for training and testing
+├── app.py                     # Python script (likely for deployment, e.g., Streamlit or Flask)
+├── best_churn_model.pkl       # Saved pickle file of the best classification model
+├── best_clv_model.txt         # Placeholder/information file for the large CLV model
+├── best_clv_model.zip         # Compressed version of the large CLV model
+└── preprocessor.pkl           # Saved pickle file for the data preprocessing pipeline
