@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 # PAGE CONFIG
 st.set_page_config(
@@ -11,8 +11,9 @@ st.set_page_config(
 )
 
 # LOAD MODEL
-model = joblib.load("best_churn_model.pkl")
-
+with open("best_churn_model_fixed.pkl", "rb") as f:
+    model = pickle.load(f)
+    
 # CUSTOM CSS
 st.markdown("""
 <style>
