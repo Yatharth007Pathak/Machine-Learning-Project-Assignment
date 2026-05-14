@@ -11,7 +11,7 @@ st.set_page_config(
 )
 
 # LOAD MODEL
-model = joblib.load("best_churn_model.pkl")
+model = joblib.load("best_churn_model_v2.pkl")
 
 # CUSTOM CSS
 st.markdown("""
