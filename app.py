@@ -8,9 +8,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 
-# =========================================================
 # PAGE CONFIG
-# =========================================================
 st.set_page_config(
     page_title="AI Customer Churn Prediction",
     page_icon="📊",
@@ -18,14 +16,10 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# =========================================================
 # LOAD DATASET
-# =========================================================
 df = pd.read_csv("Telco-Customer-Churn.csv")
 
-# =========================================================
 # DATA PREPROCESSING
-# =========================================================
 
 # Drop customer ID
 df.drop("customerID", axis=1, inplace=True)
@@ -55,9 +49,7 @@ numerical_cols = X.select_dtypes(
     exclude=["object"]
 ).columns
 
-# =========================================================
 # PREPROCESSING PIPELINES
-# =========================================================
 
 # Numerical pipeline
 numeric_transformer = Pipeline(steps=[
@@ -79,17 +71,13 @@ preprocessor = ColumnTransformer(
     ]
 )
 
-# =========================================================
 # FINAL MODEL PIPELINE
-# =========================================================
 model = Pipeline(steps=[
     ("preprocessor", preprocessor),
     ("classifier", RandomForestClassifier(random_state=42))
 ])
 
-# =========================================================
 # TRAIN TEST SPLIT
-# =========================================================
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -97,14 +85,10 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42
 )
 
-# =========================================================
 # TRAIN MODEL
-# =========================================================
 model.fit(X_train, y_train)
 
-# =========================================================
 # CUSTOM CSS
-# =========================================================
 st.markdown("""
 <style>
 
@@ -168,9 +152,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# =========================================================
 # HEADER
-# =========================================================
 st.markdown(
     '<div class="title">📊 AI Customer Churn Prediction Dashboard</div>',
     unsafe_allow_html=True
@@ -183,9 +165,7 @@ st.markdown(
 
 st.markdown("---")
 
-# =========================================================
 # SIDEBAR
-# =========================================================
 st.sidebar.title("⚙️ Quick Information")
 
 st.sidebar.info("""
@@ -201,14 +181,10 @@ This AI model predicts whether a telecom customer is likely to leave the company
 
 st.sidebar.success("Model Trained Successfully ✅")
 
-# =========================================================
 # LAYOUT
-# =========================================================
 left_col, right_col = st.columns([1, 1.1])
 
-# =========================================================
 # LEFT COLUMN → INPUTS
-# =========================================================
 with left_col:
 
     st.markdown('<div class="card">', unsafe_allow_html=True)
@@ -326,9 +302,7 @@ with left_col:
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-# =========================================================
 # RIGHT COLUMN → RESULTS
-# =========================================================
 with right_col:
 
     st.markdown('<div class="card">', unsafe_allow_html=True)
@@ -428,9 +402,7 @@ with right_col:
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-# =========================================================
 # FOOTER
-# =========================================================
 st.markdown("---")
 
 st.caption(
