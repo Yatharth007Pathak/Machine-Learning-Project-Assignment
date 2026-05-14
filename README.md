@@ -61,6 +61,7 @@ This project implements **both Classification and Regression** tasks on the **Te
 - **Streamlit Web Application** for real-time predictions
 - Well-documented and structured code
 
+Deployment: https://machine-learning-project-assignment.streamlit.app/
 ---
 
 ## 🚀 How to Run Locally
@@ -81,6 +82,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-<img width="1536" height="863" alt="image" src="https://github.com/user-attachments/assets/49bdbcea-1073-4d57-afc4-eac32061cb35" />
+<img width="1536" height="863" alt="image" src="https://github.com/user-attachments/assets/90b5f545-24ba-49aa-a918-9c99a698b21b" />
 
-<img width="1532" height="863" alt="image" src="https://github.com/user-attachments/assets/5b76365e-2614-4ffd-bf3f-16608db03508" />
+<img width="1536" height="863" alt="image" src="https://github.com/user-attachments/assets/272b26a4-d177-4697-9a52-5769c5ae5b4b" />
