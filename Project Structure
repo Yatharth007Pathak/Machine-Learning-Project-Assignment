@@ -1,11 +1,27 @@
 Machine-Learning-Project-Assignment/
-├── Graphs/                    # Directory containing generated visualization images
-├── MachineLearning.ipynb      # Main Google Colab/Jupyter notebook with ML code
-├── ProblemStatement.png       # Image file describing the project's problem statement
-├── README.md                  # Project documentation and instructions
-├── Telco-Customer-Churn.csv   # Dataset used for training and testing
-├── app.py                     # Python script (likely for deployment, e.g., Streamlit or Flask)
-├── best_churn_model.pkl       # Saved pickle file of the best classification model
-├── best_clv_model.txt         # Placeholder/information file for the large CLV model
-├── best_clv_model.zip         # Compressed version of the large CLV model
-└── preprocessor.pkl           # Saved pickle file for the data preprocessing pipeline
+├── Graphs/                        # Folder containing generated EDA and performance plots
+├── Bagging.py                     # Mathematical implementation of Bagging algorithm
+├── Boosting.py                    # Mathematical implementation of Boosting algorithm
+├── DecisionTree.py                # Mathematical implementation of Decision Trees
+├── KNN.py                         # Mathematical implementation of K-Nearest Neighbors
+├── LinearRegression.py            # Mathematical implementation of Linear Regression
+├── LogisticRegression.py          # Mathematical implementation of Logistic Regression
+├── NaiveBayes.py                  # Mathematical implementation of Naive Bayes
+├── PolynomialRegression.py        # Mathematical implementation of Polynomial Regression
+├── RidgeRegression.py             # Mathematical implementation of Ridge Regression
+├── SVM.py                         # Mathematical implementation of Support Vector Machines
+├── Stacking.py                    # Mathematical implementation of Stacking ensemble
+├── MachineLearning.ipynb          # Main Google Colab/Jupyter notebook with ML code
+├── ML_ReportFile.pdf              # Comprehensive project report
+├── Screenshots.pdf                # PDF document containing visual results and UI snippets
+├── ProblemStatement.png           # Image file describing the project's problem statement 
+├── README.md                      # Project documentation and deployment instructions
+├── .gitignore                     # Files and directories to be ignored by Git
+├── app.py                         # Main application script for deployment (Streamlit)
+├── Telco-Customer-Churn.csv       # Dataset used for training and testing
+├── deployment_model.pkl           # Final serialized best model for the web app
+├── preprocessor.pkl               # Serialized preprocessing pipeline (scaling/encoding)
+├── best_clv_model.txt             # Metadata or info regarding the large CLV model
+├── best_clv_model.zip             # Compressed large model file (bypassing GitHub size limits)
+├── requirements.txt               # List of Python dependencies for environment setup
+└── runtime.txt                    # Specification of Python runtime version for deployment
